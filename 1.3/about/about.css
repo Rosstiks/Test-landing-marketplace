@@ -60,6 +60,13 @@
     padding: 0;
     margin-top: 16px;
     margin-bottom: auto;
+    transition: all .6s;
+}
+
+.about__button:focus, .about__button:hover {
+    font-size: 105%;
+    text-shadow: 0 0 15px;
+
 }
 
 .about__button::before {
@@ -102,6 +109,7 @@
 
     .about__image {
         width: 47vw;
+        max-width: 526px;
         border-radius: 7px;
     }
 }

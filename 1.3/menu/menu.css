@@ -42,7 +42,7 @@
 }
 
 .menu__item--active + .menu__item {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 @media (min-width: 1119px) {
