@@ -1,0 +1,99 @@
+.page {
+    background-color: #F8F8F8;
+    margin: 0;
+    min-width: 320px;
+
+    font-family: TT Lakes;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+
+    color: #1B1C21;
+}
+
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.caption {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-link--request::before {
+    content: "Заявка на ремонт";
+    position: absolute;
+    left: -141px;
+    top: 8px;
+    white-space: nowrap;
+    color:#1B1C21;
+}
+
+.icon-link--check::before {
+    content: "Статус ремонта";
+    position: absolute;
+    left: -126px;
+    top: 8px;
+    white-space: nowrap;
+    color:#1B1C21;
+}
+
+.logo {
+    width: 97px;
+    height: 51px;
+}
+
+.description {
+    height: 90px;
+    overflow: hidden;
+}
+
+.description__item {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+/* for tablet */
+
+@media (min-width: 767px) {
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .logo {
+        margin-left: 26px;
+    }
+
+    .description {
+        line-height: 20px;
+        height: auto;
+        max-height: 21vw;
+    }
+
+    .description__item {
+        line-height: 20px;
+    }
+}   
+
+@media (min-width: 1119px) {
+
+    .container {
+        padding: 0 32px;
+    }
+}
