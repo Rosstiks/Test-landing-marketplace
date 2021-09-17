@@ -64,6 +64,7 @@
 }
 
 .about__button:focus, .about__button:hover {
+    outline: none;
     font-size: 105%;
     text-shadow: 0 0 15px;
 

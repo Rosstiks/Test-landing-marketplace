@@ -53,6 +53,7 @@
 
 .icon-link:hover::before, .icon-link:focus::before {
     top: 4px;
+    padding-bottom: 4px;
     text-shadow: 0 0 15px #1B1C21;
 } 
 
