@@ -31,6 +31,10 @@
     border-radius: 6px;
 }
 
+.menu__item--active + .menu__item {
+    margin-left: 10px;
+}
+
 @media (min-width: 1119px) {
 
     .menu {

@@ -33,7 +33,22 @@
 .icon-link {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s;
 }
+
+.icon-link:hover, .icon-link:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #41F6D7;
+} 
+
+.icon-link:active {
+    outline: none;
+} 
+
+.icon-link:hover::before, .icon-link:focus::before {
+    top: 4px;
+} 
 
 .icon-link--request::before {
     content: "Заявка на ремонт";
@@ -42,6 +57,7 @@
     top: 8px;
     white-space: nowrap;
     color:#1B1C21;
+    transition: top .3s;
 }
 
 .icon-link--check::before {
@@ -51,6 +67,7 @@
     top: 8px;
     white-space: nowrap;
     color:#1B1C21;
+    transition: top .3s;
 }
 
 .logo {
@@ -68,7 +85,6 @@
     margin-bottom: 24px;
 }
 
-/* for tablet */
 
 @media (min-width: 767px) {
 
