@@ -44,6 +44,7 @@
 
 .icon-link:hover, .icon-link:focus {
     outline: none;
+    transform: scale(1.1);
     box-shadow: 0 0 10px 3px #41F6D7;
 } 
 
