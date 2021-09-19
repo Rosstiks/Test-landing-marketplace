@@ -4,77 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги и сервисы</title>
+    <title>CPS</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.svg" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="about/about.css">   
     <link rel="stylesheet" href="menu/menu.css">
-    <link rel="stylesheet" href="about/about.css">
+    <link rel="stylesheet" href="icon-button/icon-button.css"> 
+    <link rel="stylesheet" href="button-more/button-more.css"> 
+    <link rel="stylesheet" href="text/text.css">
     <link rel="stylesheet" href="fonts/TTLakes/TTLakes.css">
 </head>
-<body class="page"> 
+<body> 
     <header class="header">
-        <div class="header__container container flex-container">
-            <div class="header__left-area flex-container">
-                <button class="header__link icon-link header__link--band--after" href="#">
-                    <img src="img/icons/icon_menu.png" alt="Меню">
-                </button>
-                <img class="logo" src="img/logo.svg" alt="Лого">
-            </div>
-            <div class="header__midlle-area flex-container">
-                <button class="header__link icon-link header__link--visible--tablet" href="#">
-                    <img src="img/icons/icon_call.png" alt="Позвонить">
-                </button>
-                <button class="header__link icon-link header__link--visible--tablet" href="#">
-                    <img src="img/icons/icon_chat.png" alt="Написать">
-                </button>
-                <button class="header__link icon-link header__link--visible--tablet" href="#">
-                    <img src="img/icons/icon_profile.png" alt="Профиль">
-                </button>
-            </div>
-            <div class="header__right-area flex-container">
-                <button class="header__link icon-link header__link--band--before" href="#">
-                    <img src="img/icons/icon_request.png" alt="Заявка на ремонт">
-                </button>
-                <button class="header__link icon-link header__link--without--margin" href="#">
-                    <img src="img/icons/icon_check.png" alt="Проверить статус ремонта">
-                </button>
-            </div>
+        <div class="container flex-container">
+            <button class="header__button icon-button" href="#">
+                <img class="icon-button__image" src="img/icons/icon_menu.png" alt="Меню">
+            </button>
+            <div class="header__separation view-on-tablet"></div>
+            <img class="header__logo" src="img/logo.svg" alt="Лого">
+            <button class="header__button icon-button view-on-tablet" href="#">
+                <img class="icon-button__image" src="img/icons/icon_call.png" alt="Позвонить">
+            </button>
+            <button class="header__button icon-button view-on-tablet" href="#">
+                <img class="icon-button__image" src="img/icons/icon_chat.png" alt="Написать">
+            </button>
+            <button class="header__button icon-button view-on-tablet" href="#">
+                <img class="icon-button__image" src="img/icons/icon_profile.png" alt="Профиль">
+            </button>
+            <div class="header__separation"></div>
+            <button class="header__button icon-button" href="#">
+                <img class="icon-button__image" src="img/icons/icon_request.png" alt="Заявка на ремонт">
+            </button>
+            <button class="header__button icon-button" href="#">
+                <img class="icon-button__image" src="img/icons/icon_check.png" alt="Проверить статус ремонта">
+            </button>
         </div>
     </header>
     <main>
         <section class="about container">
-            <header class="about__top-area flex-container">
-                <h1 class="about__caption caption">Услуги и сервисы</h1>
-                <button class="about__link icon-link icon-link--request" href="#">
-                    <img src="img/icons/icon_request.png" alt="Заявка на ремонт">
+            <header class="about__header flex-container">
+                <h1 class="about__caption text text__caption">Услуги и сервисы</h1>
+                <button class="icon-button view-on-desktop" href="#">
+                    <span class="icon-button__text text">Оставить заявку</span>
+                    <img class="icon-button__image" src="img/icons/icon_request.png" alt="Заявка на ремонт">
                 </button>
-                <button class="about__link icon-link icon-link--check" href="#">
-                    <img src="img/icons/icon_check.png" alt="Проверить статус ремонта">
+                <button class="icon-button view-on-desktop" href="#">
+                    <span class="icon-button__text text">Cтатус ремонта</span>
+                    <img class="icon-button__image" src="img/icons/icon_check.png" alt="Cтатус ремонта">
                 </button>
             </header>
             <nav class="menu flex-container">
-                <a class="menu__item menu__item--active" href="#">Ремонтируемые бренды</a>
-                <a class="menu__item" href="#">Ремонтируемые устройства</a>
-                <a class="menu__item" href="#">Цены на услуги</a>
-                <a class="menu__item" href="#">Адреса сервисных центров</a>
-                <a class="menu__item" href="#">Специальные цены</a>
-                <a class="menu__item" href="#">Отзывы</a>
+                <a class="menu__item menu__item--active text text--gray" href="#">Ремонтируемые бренды</a>
+                <a class="menu__item text text--gray" href="#">Ремонтируемые устройства</a>
+                <a class="menu__item text text--gray" href="#">Цены на услуги</a>
+                <a class="menu__item text text--gray" href="#">Адреса сервисных центров</a>
+                <a class="menu__item text text--gray" href="#">Специальные цены</a>
+                <a class="menu__item text text--gray" href="#">Отзывы</a>
             </nav>
-            <article class="about__info flex-container">
+            <article class="about__info flex-container">   
                 <div class="about__left-area">
-                    <div class="about__text description">
-                        <p class="description__item">Мы являемся авторизованным сервисным
+                    <div class="about__text-area">
+                        <p class="about__text text text__small">Мы являемся авторизованным сервисным
                             центром по ремонту техники Dell. Только у нас вы можете
                             отремонтировать свой ноутбук Dell с официальной гарантией
                             производителя.</p>
-                        <p class="description__item"> Мы успешно работаем с <date>1992 года</date>
+                        <p class="about__text text text__small"> Мы успешно работаем с <date>1992 года</date>
                             и заслужили репутацию надежного партнера, что подтверждает
                             большое количество постоянных клиентов. Мы гордимся тем,
                             что к нам обращаются по рекомендациям и, в свою очередь,
                             советуют нас родным и близким.</p>
-                        </div>
-                    <button class="about__button">Читать далее</button>
+                        <p class="about__text text text__small">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <button class="button-more text">Читать далее</button>
                 </div>
                 <img class="about__image" src="img/CPS.jpg" alt="">
             </article>

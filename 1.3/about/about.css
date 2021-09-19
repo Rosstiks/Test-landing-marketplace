@@ -3,8 +3,8 @@
     padding-bottom: 24px;
 }
 
-.about__top-area {
-    margin-bottom: 24px;
+.about__header {
+    padding-bottom: 24px;
 }
 
 .about__caption {
@@ -16,67 +16,33 @@
 .about__caption::before {
     content: "";
     display: block;
-    width: 3px;
+    width: 4px;
     height: 40px;
     background: #41F6D7;
-    border-radius: 2px;
+    border-radius: 0  4px 4px 0;
     position:absolute;
     left: -16px;
-}
-
-.about__link {
-    display: none;
-    position: relative;
-}
-
-.about__link:not(:last-child) {
-    margin-right: 160px;
 }
 
 .about__info {
     flex-direction: column;
 }
 
-.about__left-area {
-    margin-bottom: 15px;
+.about__text-area {
+    max-height: 90px;
+    overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .about__text {
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    font-weight: 400;
+    margin: 0;
+    margin-bottom: 2em;
+    letter-spacing: 0.20000000298023224px !important;
 }
 
 .about__image {
     width: 100vw;
-    height: auto;
-}
-
-.about__button {
-    font:inherit;
-    border: none;
-    background: none;
-    padding: 0;
-    margin-top: 16px;
-    margin-bottom: auto;
-    transition: all .6s;
-}
-
-.about__button:focus, .about__button:hover {
-    outline: none;
-    font-size: 105%;
-    text-shadow: 0 0 15px;
-
-}
-
-.about__button::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 11px;
-    background-image: url(../img/icon_more.svg);
-    margin-right: 16px;
+    margin-top: 20px;
 }
 
 @media (min-width: 767px) {
@@ -90,18 +56,13 @@
         left: -24px;
     }
 
-    .about__caption {
-        margin-bottom: 32px 0;
-    }
-
     .about__info {
-        margin-top: 32px;
         flex-direction: row;
         align-items: flex-start;
     }
 
-    .about__left-area {
-        margin-right: 47px;
+    .about__text-area {
+        max-height: 20vw;
     }
 
     .about__text {
@@ -110,8 +71,9 @@
 
     .about__image {
         width: 47vw;
-        /* max-width: 526px; */
+        max-width: 526px;
         border-radius: 7px;
+        margin: 0 0 16px 48px;
     }
 }
 
@@ -122,12 +84,12 @@
         padding-bottom: 42px;
     }
 
-    .about__link {
-        display: block;
-    }
-
     .about__caption::before {
         left: -32px;    
+    }
+
+    .about__image {
+        margin-left: 36px;
     }
     
 }

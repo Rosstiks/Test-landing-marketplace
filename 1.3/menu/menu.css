@@ -1,8 +1,6 @@
 .menu {
     overflow: scroll;
     margin-bottom: 24px;
-    align-items: baseline;
-
     /* width: 100vw; */
 }
 
@@ -11,13 +9,12 @@
 }
 
 .menu__item {
-    line-height: 40px;
-    color: #7E7E82;
-    text-decoration:none;
     box-sizing: border-box;
     height: 40px;
-    white-space: nowrap; 
+    padding: 8px 0;
+    text-decoration: none;
     margin-left: 22px;
+    white-space: nowrap;
     transition: all .5s, border-color 0s;
 }
 
@@ -25,9 +22,10 @@
     margin-left: 0;
 }
 
-.menu__item:not(.menu__item--active):hover, .menu__item:not(.menu__item--active):focus {
+.menu__item:not(.menu__item--active):hover, 
+.menu__item:not(.menu__item--active):focus {
     outline: none;
-    padding: 0 14px;
+    padding: 6px 14px;
     border: 2px solid #B8FFEC;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 6px;
@@ -38,7 +36,7 @@
 }
 
 .menu__item--active {
-    padding: 0 16px;
+    padding: 6px 16px;
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
