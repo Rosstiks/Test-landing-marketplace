@@ -1,4 +1,5 @@
-.page {
+html,
+body  {
     background-color: #F8F8F8;
     margin: 0;
     min-width: 320px;
@@ -9,21 +10,14 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight: 500;
-
     color: #1B1C21;
 }
 
 .container {
     padding: 0 16px;
     margin: 0 auto;
+    height: 100%;
     /* max-width: 1120px; */
-}
-
-.caption {
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-    font-weight: 700;
 }
 
 .flex-container {
@@ -31,57 +25,20 @@
     align-items: center;
 }
 
-.icon-link {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font: inherit;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: all 0.3s;
+.view-on-tablet, 
+.view-on-desktop {
+    display: none;
 }
 
-.icon-link:hover, .icon-link:focus {
-    outline: none;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px 3px #41F6D7;
-} 
 
-.icon-link:active {
-    outline: none;
-} 
 
-.icon-link:hover::before, .icon-link:focus::before {
-    top: 4px;
-    padding-bottom: 4px;
-    text-shadow: 0 0 15px #1B1C21;
-} 
 
-.icon-link--request::before {
-    content: "Заявка на ремонт";
-    position: absolute;
-    left: -146px;
-    top: 8px;
-    white-space: nowrap;
-    color:#1B1C21;
-    transition: top .3s;
-}
 
-.icon-link--check::before {
-    content: "Статус ремонта";
-    position: absolute;
-    left: -131px;
-    top: 8px;
-    white-space: nowrap;
-    color:#1B1C21;
-    transition: top .3s;
-}
 
-.logo {
-    width: 97px;
-    height: 51px;
-}
+
+
+
+
 
 .description {
     height: 90px;
@@ -100,8 +57,8 @@
         padding: 0 24px;
     }
 
-    .logo {
-        margin-left: 26px;
+    .view-on-tablet {
+        display: block;
     }
 
     .description {
@@ -119,5 +76,9 @@
 
     .container {
         padding: 0 32px;
+    }
+
+    .view-on-desktop {
+        display: block;
     }
 }

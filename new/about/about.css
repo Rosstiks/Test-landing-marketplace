@@ -3,8 +3,8 @@
     padding-bottom: 24px;
 }
 
-.about__top-area {
-    margin-bottom: 24px;
+.about__header {
+    padding-bottom: 24px;
 }
 
 .about__caption {
@@ -16,22 +16,22 @@
 .about__caption::before {
     content: "";
     display: block;
-    width: 3px;
+    width: 4px;
     height: 40px;
     background: #41F6D7;
-    border-radius: 2px;
+    border-radius: 0  4px 4px 0;
     position:absolute;
     left: -16px;
 }
 
-.about__link {
-    display: none;
-    position: relative;
-}
 
-.about__link:not(:last-child) {
-    margin-right: 160px;
-}
+
+
+
+
+
+
+
 
 .about__info {
     flex-direction: column;
@@ -53,32 +53,6 @@
     height: auto;
 }
 
-.about__button {
-    font:inherit;
-    border: none;
-    background: none;
-    padding: 0;
-    margin-top: 16px;
-    margin-bottom: auto;
-    transition: all .6s;
-}
-
-.about__button:focus, .about__button:hover {
-    outline: none;
-    font-size: 105%;
-    text-shadow: 0 0 15px;
-
-}
-
-.about__button::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 11px;
-    background-image: url(../img/icon_more.svg);
-    margin-right: 16px;
-}
-
 @media (min-width: 767px) {
 
     .about {
@@ -88,10 +62,6 @@
 
     .about__caption::before {
         left: -24px;
-    }
-
-    .about__caption {
-        margin-bottom: 32px 0;
     }
 
     .about__info {
@@ -120,10 +90,6 @@
     .about {
         padding-top: 42px;
         padding-bottom: 42px;
-    }
-
-    .about__link {
-        display: block;
     }
 
     .about__caption::before {
