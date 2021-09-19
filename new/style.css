@@ -3,21 +3,13 @@ body  {
     background-color: #F8F8F8;
     margin: 0;
     min-width: 320px;
-
-    font-family: TT Lakes;
-    text-align: left;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    font-weight: 500;
-    color: #1B1C21;
 }
 
 .container {
     padding: 0 16px;
     margin: 0 auto;
     height: 100%;
-    /* max-width: 1120px; */
+    max-width: 1120px;
 }
 
 .flex-container {
