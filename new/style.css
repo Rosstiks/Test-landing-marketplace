@@ -9,7 +9,7 @@ body  {
     padding: 0 16px;
     margin: 0 auto;
     height: 100%;
-    max-width: 1120px;
+    /* max-width: 1120px; */
 }
 
 .flex-container {
@@ -22,27 +22,6 @@ body  {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-.description {
-    height: 90px;
-    overflow: hidden;
-}
-
-.description__item {
-    margin: 0;
-    margin-bottom: 24px;
-}
-
-
 @media (min-width: 767px) {
 
     .container {
@@ -52,17 +31,7 @@ body  {
     .view-on-tablet {
         display: block;
     }
-
-    .description {
-        line-height: 20px;
-        height: auto;
-        max-height: 21vw;
-    }
-
-    .description__item {
-        line-height: 20px;
-    }
-}   
+}
 
 @media (min-width: 1119px) {
 
