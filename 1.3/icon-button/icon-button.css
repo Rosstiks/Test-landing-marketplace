@@ -3,6 +3,7 @@
     border: 0;
     background: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .icon-button__image {
