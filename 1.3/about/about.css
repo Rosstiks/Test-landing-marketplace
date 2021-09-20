@@ -29,10 +29,20 @@
 }
 
 .about__text-area {
+    position: relative;
     max-height: 90px;
     overflow: hidden;
     margin-bottom: 16px;
 }
+
+.about__text-area:before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(to top, #F8F8F8, transparent); 
+  }
 
 .about__text {
     margin: 0;
