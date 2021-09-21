@@ -4,11 +4,10 @@
 }
 
 .sidebar__container {
-    padding: 0 16px;
+    padding: 19px 16px 32px 16px;
 }
 
 .sidebar__header {
-    margin-top: 19px;
     margin-bottom: 50px;
 }
 
@@ -124,16 +123,13 @@
     }
 
     .sidebar__container {
-        padding: 0 24px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .sidebar__link::before {
         left: -24px;
     }
-}
-
-.lang {
-    margin-bottom: 32px;
 }
 
 .lang__item {
@@ -156,6 +152,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .sidebar {
+        box-shadow: -15px 0 45px 10px;
+    }
 
     .sidebar__nav {
         margin-bottom: 268px;
