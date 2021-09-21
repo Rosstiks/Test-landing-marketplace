@@ -154,7 +154,7 @@
 @media (min-width: 768px) {
 
     .sidebar {
-        box-shadow: -15px 0 45px 10px;
+        box-shadow: -5px 0 50px 10px #7E7E82;
     }
 
     .sidebar__nav {
