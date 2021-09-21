@@ -121,6 +121,10 @@
     .sidebar {
         width: 320px;
     }
+   
+    .sidebar {
+        box-shadow: -5px 0 50px 10px #7E7E82;
+    }
 
     .sidebar__container {
         padding-left: 24px;
@@ -152,10 +156,6 @@
 }
 
 @media (min-width: 768px) {
-
-    .sidebar {
-        box-shadow: -5px 0 50px 10px #7E7E82;
-    }
 
     .sidebar__nav {
         margin-bottom: 268px;
