@@ -33,6 +33,7 @@
     max-height: 90px;
     overflow: hidden;
     margin-bottom: 16px;
+    background: linear-gradient(to top, #F8F8F8, transparent); 
 }
 
 .about__text-area:before {

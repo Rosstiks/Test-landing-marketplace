@@ -5,6 +5,7 @@
     letter-spacing: -0.2px;
     text-align: left;
     font-weight: 500;
+    text-decoration: none;
     color: #1B1C21;
 }
 
@@ -34,3 +35,9 @@
     font-weight: 500;
 }
 
+.text__big {
+font-size: 24px;
+line-height: 32px;
+letter-spacing: -0.6000000238418579px;
+white-space: nowrap;
+} 

@@ -1,0 +1,162 @@
+.sidebar {
+    width: 100%;
+}
+
+.sidebar__container {
+    padding: 0 16px;
+}
+
+.sidebar__header {
+    margin-top: 19px;
+    margin-bottom: 50px;
+}
+
+.sidebar__nav {
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar__link {
+    position: relative;
+    display: block;
+    z-index: 10;
+    margin-bottom: 24px
+}
+
+.sidebar__link--active.text {
+    color: #7E7E82;
+}
+
+.sidebar__link:focus {
+    outline: none;
+}
+
+.sidebar__link::before {
+    content: "";
+    position:absolute;
+    left: -16px;
+}
+
+.sidebar__link:not(.sidebar__link--active)::before {
+    z-index: -1;
+    top: -8px;
+    height: 40px;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 8px 8px 0;
+    box-shadow: inset -4px 0 4px 1px #41F6D7;
+    transition: width .5s;
+}
+
+.sidebar__link:not(.sidebar__link--active):hover::before,
+.sidebar__link:not(.sidebar__link--active):focus::before {
+    width: 100%;
+}
+
+.sidebar__link--active::before {
+    top: -4px;
+    display: block;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    border-radius: 0  4px 4px 0;
+}
+
+.sidebar-contacts__icon {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.sidebar-contacts__phone,
+.sidebar-contacts__mail {
+    position: relative;
+    display: inline-block;
+    transition: transform .3s;
+    transform-origin: 50% 50%;
+}
+
+.sidebar-contacts__mail {
+    margin-bottom: 12px;
+}
+
+.sidebar-contacts__phone {
+    margin-bottom: 8px;
+}
+
+.sidebar-contacts__mail:hover,
+.sidebar-contacts__mail:focus,
+.sidebar-contacts__phone:hover,
+.sidebar-contacts__phone:focus {
+    outline: none;
+    transform: translate(10px);
+    animation: sidebar-contacts-animation 5s linear 2s infinite;
+}
+
+.sidebar-contacts__mail::before,
+.sidebar-contacts__mail::before,
+.sidebar-contacts__phone::before,
+.sidebar-contacts__phone::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    height: 1.5px;
+    width: 0;
+    background-color: #1B1C21;
+    border-radius: 1px;
+    transition: width .3s;
+}
+
+.sidebar-contacts__mail:hover::before,
+.sidebar-contacts__mail:focus::before,
+.sidebar-contacts__phone:hover::before,
+.sidebar-contacts__phone:focus::before {
+    width: 70%;
+    animation: sidebar-contacts-before-animation 5s linear 2s infinite;
+}
+
+@media (min-width: 361px) {
+    .sidebar {
+        width: 320px;
+    }
+
+    .sidebar__container {
+        padding: 0 24px;
+    }
+
+    .sidebar__link::before {
+        left: -24px;
+    }
+}
+
+.lang {
+    margin-bottom: 32px;
+}
+
+.lang__item {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.lang__item:hover,
+.lang__item:focus {
+    outline: none;
+}
+
+.lang__item:not(.lang__item--active):hover,
+.lang__item:not(.lang__item--active):focus {
+    color: #FF3E79;
+}
+
+@media (min-width: 768px) {
+
+    .sidebar__nav {
+        margin-bottom: 268px;
+    }
+}
