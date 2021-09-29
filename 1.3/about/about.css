@@ -30,6 +30,7 @@
 
 .about__text-area {
     position: relative;
+    height: auto;
     max-height: 90px;
     overflow: hidden;
     margin-bottom: 16px;
@@ -73,7 +74,8 @@
     }
 
     .about__text-area {
-        max-height: 20vw;
+        height: auto;
+        max-height: 160px;
     }
 
     .about__text {

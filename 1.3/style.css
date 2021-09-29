@@ -6,20 +6,16 @@ body  {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.container, .slider-container {
+.container {
     padding: 0 16px;
     margin: 0 auto;
     height: 100%;
     /* max-width: 1120px; */
 }
 
-.slider-container {
+.container--slider {
     padding-right: 0;
-    background-image: linear-gradient(270deg, #F8F8F8, transparent 3%);
 }
-
-
-
 
 .flex-container {
     display: flex;

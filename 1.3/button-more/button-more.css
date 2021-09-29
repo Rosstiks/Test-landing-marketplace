@@ -25,3 +25,11 @@
 .button-more:active {
     outline: none;
 }
+
+.button-more__control-element {
+    transition: height 1s;
+}
+
+.button-more--close::before {
+    transform: rotate(180deg);
+}
