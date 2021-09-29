@@ -1,7 +1,6 @@
 .menu {
     overflow: scroll;
     margin-bottom: 24px;
-    /* width: 100vw; */
 }
 
 .menu::-webkit-scrollbar {

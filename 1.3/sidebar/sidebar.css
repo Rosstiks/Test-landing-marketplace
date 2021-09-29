@@ -1,10 +1,16 @@
 .sidebar {
     width: 100%;
     background-color: #FFFFFF;
+    height: 100vh;
+    min-height: 690px;
 }
 
 .sidebar__container {
     padding: 19px 16px 32px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .sidebar__header {
@@ -12,8 +18,11 @@
 }
 
 .sidebar__nav {
+    margin-bottom: auto;
+}
+
+.sidebar__nav ul {
     margin: 0;
-    margin-bottom: 32px;
     padding: 0;
     list-style-type: none;
 }
@@ -21,47 +30,45 @@
 .sidebar__link {
     position: relative;
     display: block;
-    z-index: 10;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    transition: color .4s;
 }
 
 .sidebar__link--active.text {
     color: #7E7E82;
 }
 
-.sidebar__link:focus {
+.sidebar__link:focus,
+.sidebar__link:hover {
     outline: none;
+}
+
+.sidebar__link:not(.sidebar__link--active):focus,
+.sidebar__link:not(.sidebar__link--active):hover {
+    color: lightgreen !important;
 }
 
 .sidebar__link::before {
     content: "";
     position:absolute;
     left: -16px;
-}
-
-.sidebar__link:not(.sidebar__link--active)::before {
-    z-index: -1;
-    top: -8px;
-    height: 40px;
-    width: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0 8px 8px 0;
-    box-shadow: inset -4px 0 4px 1px #41F6D7;
-    transition: width .5s;
-}
-
-.sidebar__link:not(.sidebar__link--active):hover::before,
-.sidebar__link:not(.sidebar__link--active):focus::before {
-    width: 100%;
-}
-
-.sidebar__link--active::before {
     top: -4px;
     display: block;
     width: 4px;
     height: 32px;
-    background: #41F6D7;
+    background-color: #41F6D7;
     border-radius: 0  4px 4px 0;
+    transition: opacity .4s;
+}
+
+.sidebar__link:not(.sidebar__link--active)::before {
+    background-color: lightgreen;
+    opacity: 0;
+}
+
+.sidebar__link:not(.sidebar__link--active):hover:before,
+.sidebar__link:not(.sidebar__link--active):focus:before {
+    opacity: 1;
 }
 
 .sidebar-contacts__icon {
@@ -120,9 +127,6 @@
 @media (min-width: 361px) {
     .sidebar {
         width: 320px;
-    }
-   
-    .sidebar {
         box-shadow: -5px 0 50px 10px #7E7E82;
     }
 
@@ -153,11 +157,4 @@
 .lang__item:not(.lang__item--active):hover,
 .lang__item:not(.lang__item--active):focus {
     color: #FF3E79;
-}
-
-@media (min-width: 768px) {
-
-    .sidebar__nav {
-        margin-bottom: 268px;
-    }
 }
