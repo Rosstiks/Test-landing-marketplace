@@ -44,6 +44,17 @@ h2.section__title {
     padding: 16px;
 }
 
+.section__item-link:hover,
+.section__item-link:focus {
+    outline: none;
+}
+
+.section__item-link:hover .section__item-icon,
+.section__item-link:focus .section__item-icon{
+    border: none;
+    background-color: #ffe0e9;
+}
+
 .section__item-icon {
     box-sizing: border-box;
     position: relative;
@@ -51,6 +62,7 @@ h2.section__title {
     height: 40px;
     border: 2px solid #FF3E79;
     border-radius: 50%;
+    transition: all 0.3s;
 }
 
 .section__item-icon::after {

@@ -3,7 +3,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .button-more::before {
@@ -18,8 +18,8 @@
 .button-more:hover,
 .button-more:focus {
     outline: none;
-    transform: translateY(-6px) scale(1.05);
-    filter: drop-shadow(0 0  2px #41F6D7);
+    color: #FF3E79;
+
 }
 
 .button-more:active {

@@ -4,7 +4,12 @@ let buttonMoreControlElement = document.querySelectorAll('.button-more__control-
 let addButtonHandler = function(button, element) {
     button.addEventListener('click', function () {
         if (button.classList.contains('button-more--close')){
-            button.textContent = 'Читать далее';
+            if(element.classList.contains('about__text-area')) {
+                button.textContent = 'Читать далее';
+            } else {
+                button.textContent = 'Показать ещё';
+            }
+            
             if (window.innerWidth < 767.98) {
                 element.style.maxHeight = '90px';
             } else {
