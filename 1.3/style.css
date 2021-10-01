@@ -27,7 +27,11 @@ body  {
     display: none;
 }
 
-@media (min-width: 767px) {
+.view-on-mobile {
+    display: block;
+}
+
+@media (min-width: 767.98px) {
 
     .container {
         padding: 0 24px;
@@ -36,9 +40,13 @@ body  {
     .view-on-tablet {
         display: block;
     }
+
+    .view-on-mobile {
+        display: none;
+    }
 }
 
-@media (min-width: 1119px) {
+@media (min-width: 1119.98px) {
 
     .container {
         padding: 0 32px;
