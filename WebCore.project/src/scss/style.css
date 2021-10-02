@@ -276,7 +276,10 @@ body {
       max-height: 176px;
       overflow: hidden; } }
   .section__items--big {
-    height: 205px; }
+    min-height: 215px; }
+    @media (min-width: 767.98px) {
+      .section__items--big {
+        min-height: 176px; } }
 .section__items .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -331,6 +334,9 @@ body {
     outline: none; }
   .section__item-link--big {
     align-items: flex-end; }
+.section__item-text {
+  align-self: flex-start;
+  text-decoration: none; }
 .section__item-icon {
   box-sizing: border-box;
   position: relative;

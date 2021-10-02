@@ -29,11 +29,15 @@
         @media (min-width: 767.98px)  {
             height: auto;
             max-height: 176px;
-            overflow: hidden;
+            overflow: hidden;   
         }
 
         &--big {
-            height: 205px;
+            min-height: 215px;
+
+            @media (min-width: 767.98px)  {
+                min-height: 176px; 
+            }
         }
     }
 
@@ -112,6 +116,11 @@
         &--big {
             align-items: flex-end;
         }
+    }
+
+    &__item-text {
+        align-self: flex-start;
+        text-decoration: none;
     }
 
     &__item-icon {
