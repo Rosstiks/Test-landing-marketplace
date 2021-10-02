@@ -109,7 +109,6 @@ body {
     @media (min-width: 767.98px) {
       .about__image {
         width: 47vw;
-        max-width: 526px;
         border-radius: 7px;
         margin: 0 0 16px 48px; } }
     @media (min-width: 1119.98px) {
@@ -157,7 +156,7 @@ body {
     background-image: url(../../src/img/icon_more.svg);
     margin-right: 16px; }
   .button-more__control-element {
-    transition: all .7s; }
+    transition: all .5s; }
   .button-more--close::before {
     transform: rotate(180deg); }
 

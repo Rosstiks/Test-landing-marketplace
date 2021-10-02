@@ -41,7 +41,7 @@ function hideContent(button, element) {
 
 function showContent(button, element) {
   button.textContent = "Скрыть";
-  element.style.maxHeight = "1000px";
+  element.style.maxHeight = "400px";
 }
 
 function checkMaxHeight(button, element) {
