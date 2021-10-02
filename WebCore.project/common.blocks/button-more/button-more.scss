@@ -1,0 +1,36 @@
+.button-more {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+    outline: none;
+    color: #FF3E79;
+    }
+
+    &:active {
+        outline: none;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 11px;
+        background-image: url(../../src/img/icon_more.svg);
+        margin-right: 16px;
+    }
+
+    &__control-element {
+        transition: height 1s;
+    }
+
+    &--close {
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+}

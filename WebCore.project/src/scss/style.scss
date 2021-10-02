@@ -1,0 +1,66 @@
+html,
+body  {
+    background-color: #F8F8F8;
+    margin: 0;
+    min-width: 320px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+    height: 100%;
+
+    &--slider {
+        padding-right: 0;
+    }
+
+    @media (min-width: 767.98px) {
+        padding: 0 24px; 
+    }
+    @media (min-width: 1119.98px) {
+        padding: 0 32px;
+    }   
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.view-on-tablet {
+    display: none;
+
+    @media (min-width: 767.98px) {
+        display: block;            
+    }  
+} 
+
+.view-on-desktop {
+    display: none;
+
+    @media (min-width: 1119.98px) {
+        display: block;
+    }
+}
+
+.view-on-mobile {
+    display: block;
+
+    @media (min-width: 767.98px) {
+        display: none;
+    }
+}
+
+@import '../../common.blocks/about/about';
+@import '../../common.blocks/animation/animation';
+@import '../../common.blocks/button-more/button-more';
+@import '../../common.blocks/header/header';
+@import '../../common.blocks/icon-button/icon-button';
+@import '../../common.blocks/menu/menu';
+@import '../../common.blocks/section/section';
+@import '../../common.blocks/sidebar/sidebar';
+@import '../../common.blocks/text/text';
+@import '../../common.blocks/sidebar-contacts/sidebar-contacts';
+@import '../../common.blocks/lang/lang';
+@import url(../../common.blocks/fonts/TTLakes/TTLakes.css);
