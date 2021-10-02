@@ -35,7 +35,7 @@ function hideContent(button, element) {
   if (window.innerWidth < 767.98) {
     element.style.maxHeight = "90px";
   } else {
-    element.style.maxHeight = "160px";
+    element.style.maxHeight = "176px";
   }
 }
 
@@ -45,7 +45,10 @@ function showContent(button, element) {
 }
 
 function checkMaxHeight(button, element) {
-  if (element.clientHeight >= element.scrollHeight) {
+  if (
+    element.clientHeight >= element.scrollHeight &&
+    !button.classList.contains("button-more--close")
+  ) {
     button.style.display = "none";
   } else {
     button.style.display = "block";
