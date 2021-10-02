@@ -9,6 +9,7 @@ checkWindowWidth();
 pageWidth.addListener(checkWindowWidth);
 
 function checkWindowWidth() {
+  console.log(window.innerWidth);
   if (window.innerWidth < 767.98) {
     changeViewToSlider();
   } else {
@@ -29,6 +30,14 @@ function changeViewToLayout() {
 
   swiperInitiation.destroy(true, true);
 }
+
+let changeSectionItems = function () {
+  if (window.innerWidth < 767.98) {
+    sectionItemsSlider();
+  } else {
+    sectionItemsLayout();
+  }
+};
 
 function changeViewToSlider() {
   for (let i = 0; i < swiper.length; i++) {

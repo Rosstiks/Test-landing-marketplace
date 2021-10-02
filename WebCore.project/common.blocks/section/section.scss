@@ -31,6 +31,10 @@
             max-height: 176px;
             overflow: hidden;
         }
+
+        &--big {
+            height: 205px;
+        }
     }
 
     &__items .swiper-pagination-bullet {
@@ -85,6 +89,10 @@
         @media (min-width: 1919.98px) {
             width: calc(100%/6 - 32px);
         }
+
+        &--big {
+            height: 160px;
+        }
     }
 
     &__item-link {
@@ -99,6 +107,10 @@
         &:hover,
         &:focus {
             outline: none;
+        }
+
+        &--big {
+            align-items: flex-end;
         }
     }
 

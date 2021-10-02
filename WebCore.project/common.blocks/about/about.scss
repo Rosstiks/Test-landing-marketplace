@@ -80,6 +80,10 @@
         @media (min-width: 767.98px) {
             line-height: 20px;
         }
+
+        &:last-child {
+            margin-bottom: 1em;
+        }
     }
 
     &__image {

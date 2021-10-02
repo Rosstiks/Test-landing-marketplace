@@ -103,6 +103,8 @@ body {
     @media (min-width: 767.98px) {
       .about__text {
         line-height: 20px; } }
+    .about__text:last-child {
+      margin-bottom: 1em; }
   .about__image {
     width: 100vw;
     margin-top: 20px; }
@@ -273,6 +275,8 @@ body {
       height: auto;
       max-height: 176px;
       overflow: hidden; } }
+  .section__items--big {
+    height: 205px; }
 .section__items .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -313,6 +317,8 @@ body {
   @media (min-width: 1919.98px) {
     .section__item {
       width: calc(100%/6 - 32px); } }
+  .section__item--big {
+    height: 160px; }
 .section__item-link {
   box-sizing: border-box;
   display: flex;
@@ -323,6 +329,8 @@ body {
   padding: 16px; }
   .section__item-link:hover, .section__item-link:focus {
     outline: none; }
+  .section__item-link--big {
+    align-items: flex-end; }
 .section__item-icon {
   box-sizing: border-box;
   position: relative;
