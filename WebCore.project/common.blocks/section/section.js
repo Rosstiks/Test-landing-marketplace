@@ -9,7 +9,6 @@ checkWindowWidth();
 pageWidth.addListener(checkWindowWidth);
 
 function checkWindowWidth() {
-  console.log(window.innerWidth);
   if (window.innerWidth < 767.98) {
     changeViewToSlider();
   } else {
@@ -57,9 +56,9 @@ function changeViewToSlider() {
 
       slidesPerView: "auto",
       spaceBetween: 20,
-      // autoplay: {
-      //   delay: 5000,
-      // },
+      autoplay: {
+        delay: 5000,
+      },
       speed: 800,
     });
   }
