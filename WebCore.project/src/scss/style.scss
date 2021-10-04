@@ -52,16 +52,16 @@ body  {
     }
 }
 
-@import '../../common.blocks/text/text';
-@import '../../common.blocks/about/about';
-@import '../../common.blocks/animation/animation';
-@import '../../common.blocks/button-more/button-more';
-@import '../../common.blocks/header/header';
-@import '../../common.blocks/icon-button/icon-button';
-@import '../../common.blocks/menu/menu';
-@import '../../common.blocks/section/section';
-@import '../../common.blocks/price-table/price-table.scss';
-@import '../../common.blocks/sidebar/sidebar';
-@import '../../common.blocks/sidebar-contacts/sidebar-contacts';
-@import '../../common.blocks/lang/lang';
-@import url(../../common.blocks/fonts/TTLakes/TTLakes.css);
+@import '../common.blocks/text/text';
+@import '../common.blocks/about/about';
+@import '../common.blocks/animation/animation';
+@import '../common.blocks/button-more/button-more';
+@import '../common.blocks/header/header';
+@import '../common.blocks/icon-button/icon-button';
+@import '../common.blocks/menu/menu';
+@import '../common.blocks/section/section';
+@import '../common.blocks/price-table/price-table.scss';
+@import '../common.blocks/sidebar/sidebar';
+@import '../common.blocks/sidebar-contacts/sidebar-contacts';
+@import '../common.blocks/lang/lang';
+@import url(../common.blocks/fonts/TTLakes/TTLakes.css);
