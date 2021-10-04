@@ -53,11 +53,8 @@
     }
 
     &__items-wrapper {
-        margin: 0;
-        padding: 0;
-        list-style: none;
 
-        @media (min-width: 767.98px) {
+            @media (min-width: 767.98px) {
             display: flex;
             flex-wrap: wrap;
             margin: 0 -12px;
@@ -69,13 +66,8 @@
     }
 
     &__item {
-        box-sizing: border-box;
         width: 240px;
         height: 72px;
-        background-color: #fff;
-        border: 1px solid #EAEAEA;
-        border-radius: 6px;
-        padding: 16px;
 
         @media (min-width: 767.98px)  {
             width: calc(100%/3 - 24px);

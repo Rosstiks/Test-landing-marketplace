@@ -1,3 +1,16 @@
 .slider-mobile {
     
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__slide {
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        padding: 16px;
+    }
 }

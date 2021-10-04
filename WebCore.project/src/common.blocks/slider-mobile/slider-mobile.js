@@ -1,8 +1,8 @@
 let pageWidth = window.matchMedia("(max-width: 767.98px)");
 let swiperInitiation = [];
 let swiper = document.querySelectorAll(".slider-mobile");
-let swiperWrapper = document.querySelectorAll(".section__items-wrapper");
-let swiperSlide = document.querySelectorAll(".section__item");
+let swiperWrapper = document.querySelectorAll(".slider-mobile__wrapper");
+let swiperSlide = document.querySelectorAll(".slider-mobile__slide");
 
 changeViewToSlider();
 checkWindowWidth();
