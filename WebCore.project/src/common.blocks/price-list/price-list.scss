@@ -65,6 +65,7 @@
     &__item-block {
         box-sizing: border-box;
         margin-bottom: 16px;
+        letter-spacing: 0.2px;
 
         &--header {
             line-height: 16px;
@@ -78,7 +79,7 @@
 
         &:first-child {
             @media (min-width: 767.98px) {
-                flex-basis: 52%;
+                flex-basis: 53%;
             }
         }
 
