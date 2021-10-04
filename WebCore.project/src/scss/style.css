@@ -537,7 +537,8 @@ body {
       display: none; }
       @media (min-width: 767.98px) {
         .price-list__item-container--header {
-          display: flex; } }
+          display: flex;
+          border-bottom: none; } }
   .price-list__item-block {
     box-sizing: border-box;
     margin-bottom: 16px; }

@@ -57,6 +57,7 @@
 
             @media (min-width: 767.98px) {
                 display: flex;
+                border-bottom: none;
             }
         }
     }
@@ -64,7 +65,7 @@
     &__item-block {
         box-sizing: border-box;
         margin-bottom: 16px;
-        
+
         &--header {
             line-height: 16px;
             margin-bottom: 4px
