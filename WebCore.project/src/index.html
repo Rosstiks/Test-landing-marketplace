@@ -85,7 +85,7 @@
             </div>
             <div class="section__content">
                 <div class="container container--slider">
-                    <div class="section__items button-more__control-element">
+                    <div class="section__items slider-mobile button-more__control-element">
                         <ul class="section__items-wrapper">
                             <li class="section__item">
                                 <a class="section__item-link" href="#">
@@ -171,7 +171,7 @@
             </div>
             <div class="section__content">
                 <div class="container container--slider">
-                    <div class="section__items section__items--big button-more__control-element">
+                    <div class="section__items section__items--big slider-mobile button-more__control-element">
                         <ul class="section__items-wrapper">
                             <li class="section__item section__item--big">
                                 <a class="section__item-link section__item-link--big" href="#">
@@ -219,6 +219,64 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="section__title-container">
+                <div class="container">
+                    <h2 class="section__title text text--gray">Цены на услуги</h2>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container container--slider">
+                    <div class="price-list slider-mobile">
+                        <div class="price-list__header view-on-tablet">
+                            <span class="price-list__header-item text--gray">Ремонтные услуги</span>
+                            <span class="price-list__header-item text--gray">Цена</span>
+                            <span class="price-list__header-item text--gray">Срок</span>
+                        </div>
+                        <ul class="section__items-wrapper price-list__body text text__small">
+                            <li class="section__item price-list__item-container">
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
+                                    <span class="">Диагностика</span>
+                                </div>
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
+                                    <span class="">Бесплатно</span>
+                                </div>
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
+                                    <span class="">30 мин</span>
+                                </div>
+                                <button class="price-list__button-order text">
+                                    <span class="price-list__button-text">Заказать</span>
+                                    <div class="price-list__button-icon"></div>
+                                </button>
+                            </li>
+                            <li class="section__item price-list__item-container">
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
+                                    <span class="">Тестирование с выдачей технического заключения</span>
+                                </div>
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
+                                    <span class="">1 000 ₽</span>
+                                </div>
+                                <div class="price-list__item-block">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
+                                    <span class="">30-120 мин</span>
+                                </div>
+                                <button class="price-list__button-order text">
+                                    <span class="price-list__button-text">Заказать</span>
+                                    <div class="price-list__button-icon"></div>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination view-on-mobile"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- <section class="section">
             <div class="section__title-container">
                 <div class="container">
@@ -227,125 +285,125 @@
             </div>
             <div class="section__content">
                 <div class="container container--slider">
-                    <div class="section__items price-table button-more__control-element">
-                        <div class="price-table__column view-on-tablet"></div>
-                        <div class="price-table__column view-on-tablet"></div>
-                        <div class="price-table__column view-on-tablet"></div>
-                        <div class="price-table__column view-on-tablet"></div>
-                        <div class="price-table__table-header view-on-tablet">
-                            <div class="price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray">Ремонтные услуги</span>
+                    <div class="section__items price-list button-more__control-element">
+                        <div class="price-list__column view-on-tablet"></div>
+                        <div class="price-list__column view-on-tablet"></div>
+                        <div class="price-list__column view-on-tablet"></div>
+                        <div class="price-list__column view-on-tablet"></div>
+                        <div class="price-list__table-header view-on-tablet">
+                            <div class="price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray">Ремонтные услуги</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray">Цена</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray">Срок</span>
                                 </div>
-                                <div class="price-table__cell"></div>
+                                <div class="price-list__cell"></div>
                             </div>
                         </div>
-                        <ul class="section__items-wrapper price-table__table-body text text__small">
-                            <li class="section__item price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Ремонтные услуги</span>
+                        <ul class="section__items-wrapper price-list__table-body text text__small">
+                            <li class="section__item price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
                                     <span class="">Диагностика</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
                                     <span class="">Бесплатно</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
                                     <span class="">30 мин</span>
                                 </div>
-                                <div class="price-table-cell">
-                                    <button class="price-table__button-order text">
-                                        <span class="price-table__button-text">Заказать</span>
-                                        <div class="price-table__button-icon"></div>
+                                <div class="price-list-cell">
+                                    <button class="price-list__button-order text">
+                                        <span class="price-list__button-text">Заказать</span>
+                                        <div class="price-list__button-icon"></div>
                                     </button>
                                 </div>
                             </li>
-                            <li class="section__item price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Ремонтные услуги</span>
+                            <li class="section__item price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
                                     <span class="">Замена дисплея</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
                                     <span class="">1 000 ₽</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
                                     <span class="">30-120 мин</span>
                                 </div>
-                                <div class="price-table-cell">
-                                    <button class="price-table__button-order text">
-                                        <span class="price-table__button-text">Заказать</span>
-                                        <div class="price-table__button-icon"></div>
+                                <div class="price-list-cell">
+                                    <button class="price-list__button-order text">
+                                        <span class="price-list__button-text">Заказать</span>
+                                        <div class="price-list__button-icon"></div>
                                     </button>
                                 </div>
                             </li>
-                            <li class="section__item price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Ремонтные услуги</span>
+                            <li class="section__item price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
                                     <span class="">Замена полифонического динамика</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
                                     <span class="">1 000 ₽</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
                                     <span class="">30-120 мин</span>
                                 </div>
-                                <div class="price-table__cell">
-                                <div class="price-table-cell">
-                                    <button class="price-table__button-order text">
-                                        <span class="price-table__button-text">Заказать</span>
-                                        <div class="price-table__button-icon"></div>
+                                <div class="price-list__cell">
+                                <div class="price-list-cell">
+                                    <button class="price-list__button-order text">
+                                        <span class="price-list__button-text">Заказать</span>
+                                        <div class="price-list__button-icon"></div>
                                     </button>
                                 </div>
                                 </div>
                             </li>
-                            <li class="section__item price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Ремонтные услуги</span>
+                            <li class="section__item price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
                                     <span class="">Тестирование с выдачей технического заключения</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
                                     <span class="">1 000 ₽</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
                                     <span class="">30-120 мин</span>
                                 </div>
-                                <div class="price-table-cell">
-                                    <button class="price-table__button-order text">
-                                        <span class="price-table__button-text">Заказать</span>
-                                        <div class="price-table__button-icon"></div>
+                                <div class="price-list-cell">
+                                    <button class="price-list__button-order text">
+                                        <span class="price-list__button-text">Заказать</span>
+                                        <div class="price-list__button-icon"></div>
                                     </button>
                                 </div>
                             </li>
-                            <li class="section__item price-table__row">
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Ремонтные услуги</span>
+                            <li class="section__item price-list__row">
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Ремонтные услуги</span>
                                     <span class="">Замена программного обеспечения</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Цена</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Цена</span>
                                     <span class="">1 000 ₽</span>
                                 </div>
-                                <div class="price-table__cell">
-                                    <span class="price-table__cell-caption text--gray view-on-mobile">Срок</span>
+                                <div class="price-list__cell">
+                                    <span class="price-list__header-item text--gray view-on-mobile">Срок</span>
                                     <span class="">30-120 мин</span>
                                 </div>
-                                <div class="price-table-cell">
-                                    <button class="price-table__button-order text">
-                                        <span class="price-table__button-text">Заказать</span>
-                                        <div class="price-table__button-icon"></div>
+                                <div class="price-list-cell">
+                                    <button class="price-list__button-order text">
+                                        <span class="price-list__button-text">Заказать</span>
+                                        <div class="price-list__button-icon"></div>
                                     </button>
                                 </div>
                             </li>
@@ -359,6 +417,6 @@
     
     <script src="common.blocks/button-more/button-more.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="common.blocks/section/section.js"></script>
+    <script src="common.blocks/slider-mobile/slider-mobile.js"></script>
 </body>
 </html>
