@@ -55,38 +55,11 @@ function changeViewToSlider() {
         el: ".swiper-pagination",
       },
 
-      breakpoints: {
-        280: {
-          slidesPerView: 1.16,
-        },
-        374: {
-          slidesPerView: 1.36,
-        },
-        424: {
-          slidesPerView: 1.56,
-        },
-        474: {
-          slidesPerView: 1.76,
-        },
-        524: {
-          slidesPerView: 1.96,
-        },
-        574: {
-          slidesPerView: 2.16,
-        },
-        624: {
-          slidesPerView: 2.36,
-        },
-        674: {
-          slidesPerView: 2.56,
-        },
-        724: {
-          slidesPerView: 2.76,
-        },
-      },
-
+      slidesPerView: "auto",
       spaceBetween: 20,
-      autoplay: {},
+      // autoplay: {
+      //   delay: 5000,
+      // },
       speed: 800,
     });
   }
