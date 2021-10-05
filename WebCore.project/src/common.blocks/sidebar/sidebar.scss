@@ -1,8 +1,14 @@
 .sidebar {
+    position: fixed;        
+    display: block;
+    transform: translateY(-100%);
     width: 100%;
     background-color: #FFFFFF;
     height: 100vh;
-    min-height: 690px;
+    z-index: 100;
+    overflow-y: scroll;
+    transition-delay: .1s;
+    transition: transform .3s;
 
     @media (min-width: 361.98px) {
         width: 320px;
@@ -10,7 +16,7 @@
     }
 
     &__container {
-        padding: 19px 16px 32px 16px;
+        padding: 19px 16px 0 16px;
         flex-direction: column;
         align-items: stretch;
         box-sizing: border-box;
@@ -24,6 +30,14 @@
 
     &__header {
         margin-bottom: 50px;
+    }
+
+    &__content {
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__nav {
@@ -82,5 +96,10 @@
         &--active.text {
             color: #7E7E82;
         }
+    }
+
+    &--open {
+        display: block;
+        transform: translateY(0);
     }
 }

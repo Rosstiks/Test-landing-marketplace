@@ -17,9 +17,8 @@
         position:relative;
         box-sizing: border-box;
         height: 40px;
-        padding: 8px 6px;
+        padding: 6px 16px;
         text-decoration: none;
-        margin-left: 22px;
         white-space: nowrap;
         transition: all .3s;
 
@@ -37,14 +36,6 @@
             background: #FFFFFF;
             border: 2px solid #B8FFEC;
             border-radius: 6px;
-
-            & + .menu__item {
-                margin-left: 20px;
-            }
-
-            &:first-child {
-                margin-left: 0;
-            }
 
             &:focus {
                 outline: none;

@@ -4,7 +4,12 @@ body {
   background-color: #F8F8F8;
   margin: 0;
   min-width: 320px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth; }
+
+.body-mobile-sidebar {
+  height: 100vh;
+  overflow-y: hidden; }
 
 .container {
   padding: 0 16px;
@@ -286,9 +291,8 @@ body {
     position: relative;
     box-sizing: border-box;
     height: 40px;
-    padding: 8px 6px;
+    padding: 6px 16px;
     text-decoration: none;
-    margin-left: 22px;
     white-space: nowrap;
     transition: all .3s; }
     .menu__item:not(.menu__item--active):hover, .menu__item:not(.menu__item--active):focus {
@@ -302,10 +306,6 @@ body {
       background: #FFFFFF;
       border: 2px solid #B8FFEC;
       border-radius: 6px; }
-      .menu__item--active + .menu__item {
-        margin-left: 20px; }
-      .menu__item--active:first-child {
-        margin-left: 0; }
       .menu__item--active:focus {
         outline: none; }
 
@@ -636,16 +636,22 @@ body {
       background-image: url(../../src/img/dropdown-small.svg); }
 
 .sidebar {
+  position: fixed;
+  display: block;
+  transform: translateY(-100%);
   width: 100%;
   background-color: #FFFFFF;
   height: 100vh;
-  min-height: 690px; }
+  z-index: 100;
+  overflow-y: scroll;
+  transition-delay: .1s;
+  transition: transform .3s; }
   @media (min-width: 361.98px) {
     .sidebar {
       width: 320px;
       box-shadow: -5px 0 50px 10px #7E7E82; } }
   .sidebar__container {
-    padding: 19px 16px 32px 16px;
+    padding: 19px 16px 0 16px;
     flex-direction: column;
     align-items: stretch;
     box-sizing: border-box;
@@ -656,6 +662,10 @@ body {
         padding-right: 24px; } }
   .sidebar__header {
     margin-bottom: 50px; }
+  .sidebar__content {
+    overflow: scroll; }
+    .sidebar__content::-webkit-scrollbar {
+      display: none; }
   .sidebar__nav {
     margin-bottom: auto; }
     .sidebar__nav ul {
@@ -692,6 +702,9 @@ body {
       opacity: 1; }
     .sidebar__link--active.text {
       color: #7E7E82; }
+  .sidebar--open {
+    display: block;
+    transform: translateY(0); }
 
 .sidebar-contacts__icon {
   margin-right: 16px;
@@ -728,6 +741,7 @@ body {
   background: none;
   padding: 0;
   margin-right: 7px;
+  margin-bottom: 32px;
   cursor: pointer;
   transition: color .5s; }
   .lang__item:hover, .lang__item:focus {
