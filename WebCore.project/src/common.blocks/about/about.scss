@@ -93,9 +93,12 @@
 
         @media (min-width: 767.98px) {
             width: 47vw;
-            // max-width: 526px;
             border-radius: 7px;
             margin: 0 0 16px 48px;
+        }
+
+        @media (min-width: 1439.98px) {
+            max-width: 526px;
         }
 
         @media (min-width: 1119.98px) {

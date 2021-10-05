@@ -35,6 +35,12 @@ body  {
     display: flex;
 }
 
+.menu-button {
+    @media (min-width: 1439.98px) {
+        display: none;
+    }
+}
+
 .view-on-tablet {
     display: none;
 
@@ -59,7 +65,7 @@ body  {
     }
 }
 
-@import '../common.blocks/global-wrapper/global-wrapper.scss';
+@import '../common.blocks/global-layout/global-layout.scss';
 @import '../common.blocks/text/text';
 @import '../common.blocks/about/about';
 @import '../common.blocks/animation/animation';

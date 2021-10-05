@@ -1,8 +1,12 @@
 .header {
+    position: sticky;
+    top: 0;
     background: #FFFFFF;
     height: 88px;
+    z-index: 20;
+    border-bottom: 1px solid #D9FFF5;
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1439.98px) {
         display: none;
     }
 
