@@ -636,7 +636,7 @@ body {
       background-image: url(../../src/img/dropdown-small.svg); }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   display: block;
   transform: translateY(-100%);
   width: 100%;
@@ -704,6 +704,7 @@ body {
       color: #7E7E82; }
   .sidebar--open {
     display: block;
+    position: fixed;
     transform: translateY(0); }
 
 .sidebar-contacts__icon {

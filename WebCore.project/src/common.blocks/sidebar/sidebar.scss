@@ -1,5 +1,5 @@
 .sidebar {
-    position: fixed;        
+    position: absolute;        
     display: block;
     transform: translateY(-100%);
     width: 100%;
@@ -100,6 +100,7 @@
 
     &--open {
         display: block;
+        position: fixed;
         transform: translateY(0);
     }
 }
