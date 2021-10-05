@@ -1,6 +1,6 @@
 .sidebar {
-    position: absolute;        
-    display: block;
+    position: fixed;        
+    display: none;
     transform: translateY(-100%);
     width: 100%;
     background-color: #FFFFFF;
@@ -100,7 +100,6 @@
 
     &--open {
         display: block;
-        position: fixed;
         transform: translateY(0);
     }
 }
