@@ -70,14 +70,6 @@
             margin: 8px 16px;
         }
 
-        @media (min-width: 1679.98px) {
-            width: calc(100%/5 - 32px);
-        }
-        
-        @media (min-width: 1919.98px) {
-            width: calc(100%/6 - 32px);
-        }
-
         &--big {
             height: 160px;
         }
@@ -176,43 +168,4 @@
 .section__item-link:focus .section__item-icon {
     border: none;
     background-color: #ffe0e9;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1679.98px) {
-    .section__item {
-        width: calc(100%/5 - 32px);
-    }
-}
-
-@media (min-width: 1919.98px) {
-    .section__item {
-        width: calc(100%/6 - 32px);
-    }
 }
