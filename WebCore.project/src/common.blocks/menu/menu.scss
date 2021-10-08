@@ -4,7 +4,7 @@
     margin-bottom: 24px;
 
     @media (min-width: 1119px) {
-        // flex-wrap: wrap;
+        justify-content: space-between;;
         // overflow: auto;
         width: 100%;
     }
@@ -21,6 +21,7 @@
         text-decoration: none;
         white-space: nowrap;
         transition: all .3s;
+        
 
         &:not(.menu__item--active):hover, 
         &:not(.menu__item--active):focus {

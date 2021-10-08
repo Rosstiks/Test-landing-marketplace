@@ -65,19 +65,21 @@ body  {
     }
 }
 
-@import '../common.blocks/global-layout/global-layout.scss';
 @import '../common.blocks/text/text';
+@import '../common.blocks/global-layout/global-layout';
+@import '../common.blocks/button-order/button-order';
 @import '../common.blocks/about/about';
 @import '../common.blocks/animation/animation';
-@import '../common.blocks/slider-mobile/slider-mobile.scss';
+@import '../common.blocks/slider-mobile/slider-mobile';
 @import '../common.blocks/button-more/button-more';
 @import '../common.blocks/header/header';
 @import '../common.blocks/icon-button/icon-button';
 @import '../common.blocks/menu/menu';
 @import '../common.blocks/section/section';
-@import '../common.blocks/price-list/price-list.scss';
+@import '../common.blocks/price-list/price-list';
 @import '../common.blocks/sidebar/sidebar';
 @import '../common.blocks/sidebar-contacts/sidebar-contacts';
 @import '../common.blocks/lang/lang';
-@import '../common.blocks/footer/footer.scss';
+@import '../common.blocks/footer/footer';
+@import '../common.blocks/modal-window/modal-window';
 @import url(../common.blocks/fonts/TTLakes/TTLakes.css);

@@ -29,14 +29,6 @@ function changeViewToLayout() {
   }
 }
 
-let changeSectionItems = function () {
-  if (window.innerWidth < 767.98) {
-    sectionItemsSlider();
-  } else {
-    sectionItemsLayout();
-  }
-};
-
 function changeViewToSlider() {
   for (let i = 0; i < swiperWrapper.length; i++) {
     swiperWrapper[i].classList.add("swiper-wrapper");

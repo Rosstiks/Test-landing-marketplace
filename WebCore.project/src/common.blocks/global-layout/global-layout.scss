@@ -3,12 +3,12 @@
         display: flex;
         max-width: 1440px;
         margin: 0 auto;
-    }    
-}
-
-.contant-container {
-    @media (min-width: 1439.98px) {
-        border-right: 1px solid #D9FFF5;
+    }   
+    
+    &__contant-container {
+        @media (min-width: 1439.98px) {
+            border-right: 1px solid #D9FFF5;
+        }
     }
 
     &__blur-area {
@@ -28,3 +28,5 @@
         }
     }
 }
+
+
