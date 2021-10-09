@@ -1,0 +1,43 @@
+.text {
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    font-weight: 500;
+    text-decoration: none;
+    color: $underline-contacts-color;
+}
+
+.text--gray {
+    color: $sidebar-shadow-color;
+}
+
+.text__caption {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+}
+
+.text__small {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.text__small--line--big {
+    line-height: 20px;
+}
+
+.text__small--line--small {
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.text__big {
+font-size: 24px;
+line-height: 32px;
+letter-spacing: -0.6000000238418579px;
+white-space: nowrap;
+} 

@@ -1,0 +1,37 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: $white-color;
+    height: 88px;
+    z-index: 20;
+    border-bottom: 1px solid $section-separator-color;
+
+    @media (min-width: 1439.98px) {
+        display: none;
+    }
+
+    &__button {
+        margin: auto 16px auto 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__logo {
+        width: 97px;
+        height: 51px;
+        margin: auto;
+        margin-left: 0;
+    }
+
+    &__separation {
+        box-sizing: border-box;
+        width: 2px;
+        height: 32px;
+        margin: auto 20px auto 4px;
+        background-color: $item-separator-color;
+        border: 1px solid $item-separator-color;
+        border-radius: 1px;
+    }
+}

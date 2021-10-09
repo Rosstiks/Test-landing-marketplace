@@ -1,0 +1,27 @@
+.slider-mobile {
+    
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__slide {
+        box-sizing: border-box;
+        background-color: $white-color;
+        border: 1px solid $item-separator-color;
+        border-radius: 6px;
+        padding: 16px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $pagination-slider-color;
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $input-placeholder-color;
+}

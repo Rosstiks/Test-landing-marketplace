@@ -1,0 +1,48 @@
+.icon-button {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    &:hover, 
+    &:focus {
+        outline: none;
+        animation: icon-button-animation 1s linear infinite alternate forwards;
+    } 
+
+    &:active {
+        outline: none;
+    }
+
+    &__container {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $button-background-color;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__image {
+        display: inline-block;
+        vertical-align: middle;   
+    }
+
+    &__text {
+        margin-right: 9px;
+        margin-left: 32px;
+    }
+}
+
+@keyframes icon-button-animation {
+    to {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 5px $focus-active-color);
+    }
+}

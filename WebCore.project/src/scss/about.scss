@@ -1,0 +1,107 @@
+.about {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: 767.98px) {
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 1119.98px) {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    &__header {
+        padding-bottom: 24px;
+    }
+
+    &__caption {
+        position: relative;
+        margin: 0;
+        margin-right: auto;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 40px;
+            background: $focus-active-color;
+            border-radius: 0  4px 4px 0;
+            position:absolute;
+            left: -16px;
+
+            @media (min-width: 767.98px) {
+                left: -24px;
+            }
+
+            @media (min-width: 1119.98px) {
+                left: -32px;   
+            }
+        }
+    }
+
+    &__info {
+        flex-direction: column;
+
+        @media (min-width: 767.98px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__text-area {
+        position: relative;
+        height: auto;
+        max-height: 90px;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        @media (min-width: 767.98px) {
+            height: auto;
+            max-height: 176px;
+        }
+
+        &::before {
+            content:"";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 16px;
+            background: linear-gradient(to top, $main-background-color, transparent); 
+        }
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 2em;
+        letter-spacing: 0.20000000298023224px !important;
+
+        @media (min-width: 767.98px) {
+            line-height: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__image {
+        width: 100vw;
+        margin-top: 20px;
+        margin-left: -16px;
+
+        @media (min-width: 767.98px) {
+            width: 47vw;
+            border-radius: 7px;
+            margin: 0 0 16px 48px;
+        }
+
+        @media (min-width: 1439.98px) {
+            max-width: 526px;
+        }
+
+        @media (min-width: 1119.98px) {
+            margin-left: 36px;
+        }
+    }
+}

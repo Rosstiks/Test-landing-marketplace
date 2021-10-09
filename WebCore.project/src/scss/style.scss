@@ -1,8 +1,19 @@
-
+$main-background-color: #F8F8F8;
+$focus-active-color: #41F6D7;
+$focus-sidebar-item-color: lightgreen;
+$button-background-color: #FF3E79;
+$button-background-focus-color: #ffe0e9;
+$white-color: #fff;
+$section-separator-color: #D9FFF5;
+$item-separator-color: #EAEAEA;
+$sidebar-shadow-color: #7E7E82;
+$input-placeholder-color: #B5B6BC;
+$underline-contacts-color: #1B1C21;
+$pagination-slider-color: #DDDDDD;
 
 html,
 body  {
-    background-color: #F8F8F8;
+    background-color: $main-background-color;
     margin: 0;
     min-width: 320px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -12,23 +23,6 @@ body  {
 .body-open-sidebar {
     height: 100vh;
     overflow-y: hidden;
-}
-
-.container {
-    padding: 0 16px;
-    margin: 0 auto;
-    height: 100%;
-
-    &--slider {
-        padding-right: 0;
-    }
-
-    @media (min-width: 767.98px) {
-        padding: 0 24px; 
-    }
-    @media (min-width: 1119.98px) {
-        padding: 0 32px;
-    }   
 }
 
 .flex-container {
@@ -65,21 +59,23 @@ body  {
     }
 }
 
-@import '../common.blocks/text/text';
-@import '../common.blocks/global-layout/global-layout';
-@import '../common.blocks/button-order/button-order';
-@import '../common.blocks/about/about';
-@import '../common.blocks/animation/animation';
-@import '../common.blocks/slider-mobile/slider-mobile';
-@import '../common.blocks/button-more/button-more';
-@import '../common.blocks/header/header';
-@import '../common.blocks/icon-button/icon-button';
-@import '../common.blocks/menu/menu';
-@import '../common.blocks/section/section';
-@import '../common.blocks/price-list/price-list';
-@import '../common.blocks/sidebar/sidebar';
-@import '../common.blocks/sidebar-contacts/sidebar-contacts';
-@import '../common.blocks/lang/lang';
-@import '../common.blocks/footer/footer';
-@import '../common.blocks/modal-window/modal-window';
-@import url(../common.blocks/fonts/TTLakes/TTLakes.css);
+@import url(../fonts/TTLakes/TTLakes.css);
+@import '../../node_modules/swiper/swiper';
+@import 'container';
+@import 'text';
+@import 'global-layout';
+@import 'button-order';
+@import 'about';
+@import 'slider-mobile';
+@import 'button-more';
+@import 'header';
+@import 'icon-button';
+@import 'menu';
+@import 'section';
+@import 'price-list';
+@import 'sidebar';
+@import 'sidebar-contacts';
+@import 'lang';
+@import 'footer';
+@import 'modal-window';
+

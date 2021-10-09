@@ -1,0 +1,16 @@
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+    height: 100%;
+
+    &--slider {
+        padding-right: 0;
+    }
+
+    @media (min-width: 767.98px) {
+        padding: 0 24px; 
+    }
+    @media (min-width: 1119.98px) {
+        padding: 0 32px;
+    }   
+}

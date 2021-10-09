@@ -1,0 +1,129 @@
+.sidebar { 
+    position: fixed; 
+    top: 0;       
+    left: -120%;
+    height: 100vh;
+    width: 100%;
+    z-index: 51;     
+    background-color: $white-color;
+    transition: all .3s;
+
+    @media (min-width: 361.98px) {
+        width: 320px;
+        box-shadow: -5px 0 50px 10px $sidebar-shadow-color;
+    }
+
+    @media (min-width: 1439.98px) {
+        position: sticky;
+        min-width: 320px;
+        height: 100vh;
+        box-shadow: none;
+        border-left: 1px solid $section-separator-color;
+        border-right: 1px solid $section-separator-color;
+        z-index: 1;
+    }
+
+    &__container {
+        padding-top: 19px;
+        flex-direction: column;
+        align-items: stretch;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    &__header {
+        margin-bottom: 45px;
+        padding: 0 16px;
+
+        @media (min-width: 361.98px) {
+            padding-left: 24px;
+             padding-right: 24px;
+        }
+    }
+
+    &__content {
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 16px;
+        padding-top: 5px;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media (min-width: 361.98px) {
+            padding-left: 24px;
+             padding-right: 24px;
+        }
+    }
+
+    &__nav {
+        margin-bottom: auto;
+
+        & ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        margin-bottom: 24px;
+        transition: color .4s;
+
+        &:focus,
+        &:hover {
+            outline: none;
+        }
+
+        &:not(.sidebar__link--active):focus,
+        &:not(.sidebar__link--active):hover {
+            color: $focus-sidebar-item-color !important;
+        }
+
+        &::before {
+            content: "";
+            position:absolute;
+            left: -16px;
+            top: -4px;
+            display: block;
+            width: 4px;
+            height: 32px;
+            background-color: $focus-active-color;  
+            border-radius: 0  4px 4px 0;
+            transition: opacity .4s;
+
+            @media (min-width: 361.98px) {
+                left: -24px;
+            }
+        }
+
+        &:not(.sidebar__link--active)::before {
+            background-color: $focus-sidebar-item-color;
+            opacity: 0;
+        }
+        
+        &:not(.sidebar__link--active):hover::before,
+        &:not(.sidebar__link--active):focus::before {
+            opacity: 1;
+        }
+
+        &--active.text {
+            color: $sidebar-shadow-color;
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+
+    &--open {
+        top: 0;
+        left: 0;
+    }
+}

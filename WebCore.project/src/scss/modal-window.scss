@@ -1,0 +1,133 @@
+.modal-window {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: $white-color;
+    border-left: 1px solid $section-separator-color;
+    position: fixed; 
+    top: 0;       
+    left: 120%;
+    z-index: 61;    
+    transition: all .3s;
+
+    @media (min-width: 520px) {
+        width: 440px;
+        box-shadow: 5px 0 50px 10px $sidebar-shadow-color;
+    }
+
+    &__close-button {
+        margin-top: 24px;
+
+        @media (min-width: 520px) {
+            position: absolute;
+            left: -62px;
+            z-index: 61;
+        }
+    }
+
+    &__contant {
+        overflow: scroll; 
+        height: 100%;
+        padding: 0 20px;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 24px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 40px;
+            background: #41F6D7;
+            border-radius: 0  4px 4px 0;
+            position: absolute;
+            left: -20px;
+            top: -8px;
+        }
+    }
+
+    &__form {
+        padding-bottom: 30px;
+    }
+
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__input {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3em;
+        padding: 12px 16px;
+        border: 1px solid $item-separator-color;
+        background-color: transparent;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        transition: border .3s;
+        z-index: 3;
+
+        &:focus {
+            border-color: $focus-active-color;
+            outline: none;
+        }
+
+        &--textarea {
+            height: 118px;
+        }
+    }
+
+    &__input-placeholder {
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        color: $input-placeholder-color;
+        background-color: $white-color;
+        z-index: 2;
+        transition: all .3s;
+
+        &--active {
+            font-size: 12px;
+            transform: translateY(-24px);
+            z-index: 5;
+            padding: 0 6px;
+        }
+    }
+
+    &__privacy-link {
+        color: $button-background-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+
+    &__submit-button {
+        padding-left: 8px;
+        margin-left: auto;
+    }
+
+    &--active {
+        left: 0;
+
+        @media (min-width: 520px) {
+            left: calc(100% - 440px);
+        }
+    }
+}
+
+.modal-window__input:focus ~ .modal-window__input-placeholder {
+    color: $focus-active-color;
+}
